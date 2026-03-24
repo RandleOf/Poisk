@@ -1,4 +1,10 @@
 /* QuestionProcessor.css */
+
+@font-face{
+  font-family: EducationalGothicRegular;
+  src: url(assets/EducationalGothic-Regular.otf)
+}
+
 .question-processor {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,9 +13,19 @@
 }
 
 h1 {
-  color: #333;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
+  font-family: EducationalGothicRegular;
+  font-size: 10em;
+}
+
+h2{
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: EducationalGothicRegular;
+  font-size: 2em;
 }
 
 .question-form {
@@ -19,7 +35,9 @@ h1 {
 .question-input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  outline: none;
+  border: 5px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.753);
   border-radius: 4px;
   font-size: 16px;
   resize: vertical;
@@ -28,7 +46,11 @@ h1 {
 }
 
 .submit-button {
-  background-color: #4CAF50;
+  
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #9b72cf;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -36,10 +58,11 @@ h1 {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  border-radius: 2em;
 }
 
 .submit-button:hover:not(:disabled) {
-  background-color: #45a049;
+  background-color: #c8b1e4;
 }
 
 .submit-button:disabled {
@@ -61,7 +84,8 @@ h1 {
 }
 
 .stats {
-  background-color: #e3f2fd;
+  background-color: #8452c7;
+  color: rgb(231, 231, 231);
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -71,11 +95,24 @@ h1 {
   margin: 10px 0;
 }
 
-.words-section, .stemmed-section {
-  background-color: #f5f5f5;
+.words-section{
+  background-color: #824acc;
+  color: white;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
+}
+
+.stemmed-section{
+  background-color: #6f3eaf;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#spinnerText{
+  color: white;
 }
 
 .word-list {
@@ -86,7 +123,7 @@ h1 {
 }
 
 .word-tag {
-  background-color: #e0e0e0;
+  background-color: #62359c;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 14px;
@@ -100,10 +137,10 @@ h1 {
 }
 
 .stemmed-item {
-  background-color: white;
+  background-color: #562b8d;
   padding: 8px;
   border-radius: 4px;
-  border: 1px solid #ddd;
+  border: 0px solid #927575;
 }
 
 .paragraphs-section {
@@ -111,23 +148,25 @@ h1 {
 }
 
 .paragraph-card {
-  background-color: white;
+  background-color: #e8d7ff;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 1em;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .paragraph-header {
-  background-color: #f8f9fa;
+  background-color: #dfc6ff;
   padding: 12px 15px;
   border-bottom: 1px solid #ddd;
 }
 
 .paragraph-header h3 {
   margin: 0;
-  color: #495057;
+  color: #000000;
 }
 
 .paragraph-content {
@@ -151,7 +190,7 @@ h1 {
 
 .matches-section {
   margin-top: 20px;
-  background-color: #fff3e0;
+  background-color: #d1aeff;
   padding: 15px;
   border-radius: 4px;
 }
@@ -164,19 +203,18 @@ h1 {
 }
 
 .match-item {
-  background-color: white;
+  background-color: #e6d1ff;
   padding: 8px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #ffe0b2;
+  border: 1px solid #c395ff;
 }
 
 .match-key {
   font-weight: bold;
-  color: #f57c00;
+  color: #801fff;
 }
-
 .match-value {
   color: #666;
 }
@@ -191,3 +229,48 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.cloudsDiv{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.clouds{
+  position: fixed;
+  width: 40em;
+  height: 40em;
+  background-image: radial-gradient(#532b88, #532b8898, #00000000, #00000000);
+  z-index: -10;
+}
+
+#cloud-1{
+  top: -9em;
+  left: 14em;
+}
+#cloud-2{
+  top: 19em;
+  left: -2em;
+}
+#cloud-3{
+  top: 29em;
+  left: 19em;
+}
+#cloud-4{
+  top: 0em;
+  left: 65em;
+}
+#cloud-5{
+  top: 33em;
+  left: 83em;
+}
+
+.stars{
+  position: absolute;
+  margin-left: -19%;
+  margin-top: -2%;
+  width: 100%;
+  height: 100%;
+}
+
