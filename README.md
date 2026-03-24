@@ -3,6 +3,8 @@
 2. Далее необходимо переместить "text.txt" в "/poiskKn/backend/..."
 3. Песле этого надо следовать инструкции в "/poiskKn/README.md"
 
+(Чтобы перейти в директорию надо выполнить команду : "cd {название директории}")
+
 Оцените нас : https://forms.yandex.ru/u/69c1984190fa7b0f065742d8
 
 Не откажемся от поддержки : https://www.donationalerts.com/r/ranzygamerer
